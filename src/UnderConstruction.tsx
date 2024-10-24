@@ -3,7 +3,7 @@ import { Construction } from "lucide-react"
 
 export default function UnderConstruction() {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-100 to-gray-200 overflow-hidden">
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br drop-shadow-2xl">
         <div className="text-center p-6 bg-white rounded-lg shadow-xl max-w-sm w-full mx-auto">
           <Construction className="mx-auto text-yellow-500 mb-4" size={48} />
           <h1 className="text-2xl font-bold text-gray-800 mb-2">Under Construction</h1>
