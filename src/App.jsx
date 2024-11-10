@@ -1,4 +1,4 @@
-import './App.css'
+
 import ContactCard from './ContactCard'
 import HeroCard from './HeroCard'
 import Navbar from './NavBar'

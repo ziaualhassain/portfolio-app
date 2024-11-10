@@ -48,7 +48,9 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Menu Links */}
-      <ul className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'}`}>
+      <ul 
+        className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} flex flex-col items-center justify-center space-y-4`}
+      >
         <li className="text-white hover:text-gray-400 py-2 px-4">
           About
         </li>
