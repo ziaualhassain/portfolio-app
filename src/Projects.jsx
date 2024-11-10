@@ -1,4 +1,6 @@
 import ProjectCard from "./ProjectCard";
+import insighterHomepage from "./assets/images/insights.png"
+import reactLogo from "./assets/images/react.svg"
 
 export default function Projects() {
     return (
@@ -10,7 +12,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Insighters"
                         desc="A one-stop destination for all insightful things, including news, articles, and networking opportunities."
-                        image="src/assets/insights.png"
+                        image={insighterHomepage}
                         livehref="https://insighters.app"
                         githubhref="https://github.com/ziaualhassain"
                         target="_blank"
@@ -23,7 +25,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Decentralised Health info Hub"
                         desc="A new age health data storing web3 app for trust and security"
-                        image="src/assets/react.svg"
+                        image={reactLogo}
                         href="https://chatgpt.com"
                         target="_blank"
                     />
@@ -34,7 +36,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Decentralised Hub"
                         desc="A new age health data storing web3 app for trust and security in a decentralised way built on top of ethereal block chain"
-                        image="src/assets/react.svg"
+                        image={reactLogo}
                         href="https://chatgpt.com"
                         target="_blank"
                     />
@@ -45,7 +47,7 @@ export default function Projects() {
                     <ProjectCard
                         title="Decentralised Hub"
                         desc="A new age health data storing web3 app for trust and security"
-                        image="src/assets/react.svg"
+                        image={reactLogo}
                         href="https://chatgpt.com"
                         target="_blank"
                     />
