@@ -1,9 +1,8 @@
 import { useState } from 'react';
-
+import { Link } from 'react-router-dom';
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Toggle mobile menu visibility
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -16,7 +15,6 @@ export default function Navbar() {
           Zia
         </div>
 
-        {/* Right side: Desktop Navigation Links */}
         <ul className="hidden lg:flex lg:justify-end lg:space-x-8 text-white">
           <li className="hover:text-gray-400 py-2 px-4">
             About
@@ -29,7 +27,7 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Hamburger Menu Button for Mobile (visible only on mobile) */}
+      
         <button 
           className="lg:hidden text-white focus:outline-none"
           onClick={toggleMobileMenu}
@@ -55,7 +53,6 @@ export default function Navbar() {
           About
         </li>
         <li className="text-white hover:text-gray-400 py-2 px-4">
-          Projects
         </li>
         <li className="text-white hover:text-gray-400 py-2 px-4">
           Contact

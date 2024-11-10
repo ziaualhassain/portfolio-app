@@ -19,7 +19,7 @@ export default function HeroCard() {
       </p>
 
       <div className="mt-10">
-      <a href=''> <button className="bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
+      <a href='https://drive.google.com/file/d/1WdEyLJ4y_w1tDET8e8DxmLuMqWK-5dCG/view?usp=drivesdk' target='_blank'> <button className="bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
           Resume
         </button>
       </a> 

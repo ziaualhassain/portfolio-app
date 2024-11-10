@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-    {/* <UnderConstruction/> */}
-    {/* <Navbar/> */}
+    <UnderConstruction/>
+    <Navbar/>
     <HeroCard/>
     <Projects/> 
     {/* <ContactCard/> */}
