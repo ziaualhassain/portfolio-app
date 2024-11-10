@@ -11,7 +11,7 @@ function App() {
     <>
     <UnderConstruction/>
     <Navbar/>
-    <HeroCard/>
+    {/* <HeroCard/> */}
     <Projects/> 
     {/* <ContactCard/> */}
     </>
