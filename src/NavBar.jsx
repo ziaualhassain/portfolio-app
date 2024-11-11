@@ -49,12 +49,13 @@ export default function Navbar() {
       <ul 
         className={`lg:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} flex flex-col items-center justify-center space-y-4`}
       >
-        <li className="text-white hover:text-gray-400 py-2 px-4">
+        <li className="text-white hover:text-yellow-300 py-2 px-4">
           About
         </li>
-        <li className="text-white hover:text-gray-400 py-2 px-4">
+        <li className="text-white hover:text-yellow-300 py-2 px-4">
+          Projects
         </li>
-        <li className="text-white hover:text-gray-400 py-2 px-4">
+        <li className="text-white hover:text-yellow-300 py-2 px-4">
           Contact
         </li>
       </ul>
