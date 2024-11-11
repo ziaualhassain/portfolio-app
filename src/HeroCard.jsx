@@ -18,8 +18,8 @@ export default function HeroCard() {
         I bring a versatile skill set that spans from development through to deployment.
       </p>
 
-      {/* Social Media */}
-      <div className="mt-2 flex space-x-6">
+    {/* Social Media */}
+    <div className="mt-2 flex space-x-6">
         <a href="https://www.instagram.com/ziaualhassain" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-white text-3xl hover:text-yellow-300 transition duration-300" />
         </a>
@@ -41,12 +41,14 @@ export default function HeroCard() {
         </a> */}
       </div>
 
-      <div className="mt-10 mb-20 flex justify-evenly space-x-4">
+      <div className="mt-20 mb-20 flex justify-evenly space-x-4">
+
         <a href="https://github.com/user-attachments/files/17692728/Ziaual_Hassain_Shaik.pdf" target="_blank">
           <button className="mb-4 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
             Download Resume
           </button>
         </a>
+
 
         <a href="mailto:ziaualhassain@gmail.com" target="_blank">
           <button className="mb-4 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
@@ -55,8 +57,9 @@ export default function HeroCard() {
         </a>
       </div>
 
+
       {/* Marquee */}
-      <div className="overflow-hidden absolute bottom-10 left-0 right-0 w-full mb-16">
+      <div className="overflow-hidden absolute bottom-20 left-0 right-0 w-full mb-16">
         <div className="flex animate-marquee space-x-8 text-2xl md:text-3xl">
           {[
             { Icon: FaJs, label: 'JavaScript', color: 'text-yellow-300' },
