@@ -16,13 +16,13 @@ export default function Navbar() {
         </div>
 
         <ul className="hidden lg:flex lg:justify-end lg:space-x-8 text-white">
-          <li className="hover:text-gray-400 py-2 px-4">
+          <li className="hover:hover:text-yellow-300 py-2 px-4">
             About
           </li>
-          <li className="hover:text-gray-400 py-2 px-4">
+          <li className="hover:hover:text-yellow-300 py-2 px-4">
             Projects
           </li>
-          <li className="hover:text-gray-400 py-2 px-4">
+          <li className="hover:hover:text-yellow-300 py-2 px-4">
             Contact
           </li>
         </ul>

@@ -9,11 +9,11 @@ function App() {
 
   return (
     <>
-    {/* <UnderConstruction/> */}
+    <UnderConstruction/>
     <Navbar/>
     <HeroCard/>
     <Projects/> 
-    {/* <ContactCard/> */}
+    <ContactCard/>
     </>
   )
 }

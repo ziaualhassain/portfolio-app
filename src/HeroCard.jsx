@@ -20,34 +20,43 @@ export default function HeroCard() {
 
     {/* Social Media */}
     <div className="mt-8 flex space-x-6">
-        <a href="https://www.instagram.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/ziaualhassain" target="_blank" rel="noopener noreferrer">
           <FaInstagram className="text-white text-3xl hover:text-yellow-300 transition duration-300" />
         </a>
         
-        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://twitter.com/ziaualhassain" target="_blank" rel="noopener noreferrer">
           <FaTwitter className="text-white text-3xl hover:text-yellow-300 transition duration-300" />
         </a>
         
-        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/ziaualhassain/" target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="text-white text-3xl hover:text-yellow-300 transition duration-300" />
         </a>
 
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/ziaualhassain" target="_blank" rel="noopener noreferrer">
           <FaGithub className="text-white text-3xl hover:text-yellow-300 transition duration-300" />
         </a>
 
-        <a href="https://www.youtube.com/c/yourusername" target="_blank" rel="noopener noreferrer">
+        {/* <a href="https://www.youtube.com/c/yourusername" target="_blank" rel="noopener noreferrer">
           <FaYoutube className="text-white text-3xl hover:text-red-600 transition duration-300" />
+        </a> */}
+      </div>
+
+      <div className="mt-10 flex justify-evenly space-x-4">
+
+        <a href="https://github.com/user-attachments/files/17692728/Ziaual_Hassain_Shaik.pdf" target="_blank">
+          <button className="mb-4 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
+            Download Resume
+          </button>
+        </a>
+
+
+        <a href="mailto:ziaualhassain@gmail.com" target="_blank">
+          <button className="mb-4 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
+            Contact Me
+          </button>
         </a>
       </div>
 
-      <div className="mt-10">
-        <a href='https://github.com/user-attachments/files/17692728/Ziaual_Hassain_Shaik.pdf' target='_blank'>
-          <button className="mb-20 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
-            Resume
-          </button>
-        </a> 
-      </div>
 
       {/* Marquee */}
       <div className="overflow-hidden absolute bottom-20 left-0 right-0 w-full mb-16">
