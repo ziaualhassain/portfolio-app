@@ -67,7 +67,7 @@ export default function Projects() {
                 <div>
                     <ProjectCard
                         title="Sorting Algorithm Visusalizer"
-                        desc="A new age health data storing web3 app for trust and security in a decentralised way built on top of ethereal block chain"
+                        desc="It is an interactive tool that animates the process of sorting algorithms which helps user to understand their behavior and efficiency."
                         image={DSALogo}
                         livehref="https://ziaualhassain.github.io/Sorting_Visualiser/"
                         githubhref="https://github.com/ziaualhassain/Sorting_Visualiser"

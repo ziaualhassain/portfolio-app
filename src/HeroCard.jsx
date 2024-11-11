@@ -9,7 +9,7 @@ export default function HeroCard() {
     <div className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center px-4 mb-10">
       <h1 className="text-4xl md:text-5xl font-extrabold mb-10">Ziaual Hassain Shaik | Systems Engineer</h1>
       <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
-        I'm Zia, a System Engineer at TCS with over 15 months of experience, specializing in ETL processes and leveraging
+        I'm Zia, a Part-time traveller & full time SE@TCS with over 15 months of experience, specializing in ETL processes and leveraging
         <span className="font-semibold text-yellow-300"> Azure</span> and 
         <span className="font-semibold text-yellow-300"> MySQL</span> to design, optimize, and scale data solutions.
         With hands-on expertise across the

@@ -35,12 +35,17 @@ const ContactCard = () => {
       Email : email,
       Subject : subject
     }
-    axios.post("https://api.sheetbest.com/sheets/d5b83fc0-609c-45ec-be0f-23232321fadb",data).then((response)=>{
-      console.log(response)
-      setName('')
-      setEmail('')
-      setSubject('')
-    })
+    try{
+      axios.post("https://api.sheetbest.com/sheets/d5b83fc0-609c-45ec-be0f-23232321fadb",data).then((response)=>{
+        console.log(response)
+        setName('')
+        setEmail('')
+        setSubject('')
+      })
+      alert('Success')
+    }catch(e){
+      alert('failed')
+    }
   };
 
   return (
