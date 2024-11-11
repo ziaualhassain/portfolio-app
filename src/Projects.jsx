@@ -6,9 +6,11 @@ import portfolioLogo from "./assets/images/portfolio.png"
 import DSALogo from "./assets/images/DSA.png"
 import leadTracker from "./assets/images/leadTracker.png"
 import fundRiser from "./assets/images/fundriser.png"
+import ContactCard from "./ContactCard";
 
 export default function Projects() {
     return (
+        <>
         <div className="container mx-auto p-4">
              <div className="text-center py-4">
                 <h2 className="text-2xl font-semibold">Projects</h2>
@@ -93,5 +95,7 @@ export default function Projects() {
                 </div>
             </div>
         </div>
+        <ContactCard/>
+        </>
     );
 }

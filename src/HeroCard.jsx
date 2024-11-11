@@ -3,9 +3,11 @@ import { FaJs, FaReact, FaNodeJs, FaJava, FaDocker, FaAws, FaEnvelope,FaCloudDow
 import { SiNextdotjs, SiMysql, SiExpress, SiKubernetes, SiMongodb, SiPrisma, SiMicrosoftazure } from 'react-icons/si';
 import { DiPostgresql } from 'react-icons/di';
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import Projects from './Projects';
 
 export default function HeroCard() {
   return (
+    <>
     <div className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center h-screen relative flex flex-col items-center justify-center">
       <div className="px-4 mb-10">
         {/* Header Section */}
@@ -103,6 +105,8 @@ export default function HeroCard() {
         </div>
       </div>
     </div>
+    <Projects/>
+    </>
   );
 }
 
