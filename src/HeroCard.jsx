@@ -41,7 +41,7 @@ export default function HeroCard() {
         </a> */}
       </div>
 
-      <div className="mt-10 flex justify-evenly space-x-4">
+      <div className="mt-10 mb-20 flex justify-evenly space-x-4">
 
         <a href="https://github.com/user-attachments/files/17692728/Ziaual_Hassain_Shaik.pdf" target="_blank">
           <button className="mb-4 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
