@@ -42,7 +42,7 @@ export default function HeroCard() {
 
         {/* Buttons */}
         <div className="mt-10 mb-10 flex flex-wrap justify-center gap-6">
-          <a href="https://github.com/user-attachments/files/17692728/Ziaual_Hassain_Shaik.pdf" target="_blank">
+          <a href="https://github.com/user-attachments/files/17703959/Ziaual_Hassain_Shaik.pdf" target="_blank">
           <button className="flex items-center bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
               <FaCloudDownloadAlt className="mr-2" /> {/* Icon */}
               Resume
