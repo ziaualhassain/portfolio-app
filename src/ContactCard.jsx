@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from 'react-icons/fa';
+import axios from 'axios';
 
 const SocialLinks = () => {
   return (
@@ -22,57 +23,24 @@ const SocialLinks = () => {
 
 const ContactCard = () => {
   // State to store form data
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: ''
-  });
-
-  // Handle form input change
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value
-    }));
-  };
+  const [name,setName] = useState("")
+  const [email,setEmail] = useState("")
+  const [subject,setSubject] = useState("")
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
-    // Get the form data from the state
+    //console.log(name,email,subject)
     const data = {
-      name: formData.name,
-      email: formData.email,
-      subject: formData.subject,
-    };
-
-    console.log("Form Data:", data);  // Log the form data to ensure it's correct
-
-    // Send POST request to Google Apps Script Web App
-    try {
-      const response = await fetch('https://script.google.com/macros/s/AKfycbyBrDutxbrttVG4bL8g4Dxx7EsRL6tD1NMc7JTHoIIJoRUrsXVsniy91Mk4t7KNn3cTGw/exec', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
-
-      const result = await response.json();
-
-      console.log("Response Status:", response.status);  // Log the response status
-      console.log("Response Body:", result);  // Log the response body
-
-      if (response.ok) {
-        alert('Message sent successfully!');
-      } else {
-        alert('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      console.error('Error:', error);
-      alert('There was an error submitting your form.');
+      Name : name,
+      Email : email,
+      Subject : subject
     }
+    axios.post("https://api.sheetbest.com/sheets/d5b83fc0-609c-45ec-be0f-23232321fadb",data).then((response)=>{
+      console.log(response)
+      setName('')
+      setEmail('')
+      setSubject('')
+    })
   };
 
   return (
@@ -89,26 +57,18 @@ const ContactCard = () => {
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="block text-gray-700 font-semibold mb-2">Name</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              required
+            <input type="text" id="name" name="name" required
+              onChange={(e)=>setName(e.target.value)}
+              value={name}
               className="w-full px-4 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
           <div className="mb-4">
             <label htmlFor="email" className="block text-gray-700 font-semibold mb-2">Email</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              required
+            <input type="email" id="email" name="email" required
+              onChange={(e)=>setEmail(e.target.value)}
+              value={email}
               className="w-full px-4 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
@@ -116,12 +76,9 @@ const ContactCard = () => {
           <div className="mb-4">
             <label htmlFor="subject" className="block text-gray-700 font-semibold mb-2">Subject</label>
             <input
-              type="text"
-              id="subject"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              required
+              type="text" id="subject"  name="subject" required
+              onChange={(e)=>setSubject(e.target.value)}
+              value={subject}
               className="w-full px-4 py-2 border rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
