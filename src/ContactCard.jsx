@@ -55,7 +55,7 @@ const ContactCard = () => {
         
         {/* Card Header */}
         <div className="text-center py-4">
-          <h2 className="text-2xl font-semibold">Contact Us</h2>
+          <h2 className="text-2xl font-semibold">Contact Form</h2>
         </div>
 
         {/* Card Form */}

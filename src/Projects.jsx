@@ -10,6 +10,9 @@ import fundRiser from "./assets/images/fundriser.png"
 export default function Projects() {
     return (
         <div className="container mx-auto p-4">
+             <div className="text-center py-4">
+                <h2 className="text-2xl font-semibold">Projects</h2>
+            </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {/* Project 1 insighters*/}
                 <div>

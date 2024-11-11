@@ -1,5 +1,6 @@
 
 import ContactCard from './ContactCard'
+import Footer from './Footer'
 import HeroCard from './HeroCard'
 import Navbar from './NavBar'
 import Projects from './Projects'
@@ -14,6 +15,7 @@ function App() {
     <HeroCard/>
     <Projects/> 
     <ContactCard/>
+    <Footer/>
     </>
   )
 }
