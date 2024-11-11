@@ -7,7 +7,7 @@ import { FaInstagram, FaTwitter, FaLinkedin, FaGithub, FaYoutube } from 'react-i
 export default function HeroCard() {
   return (
     <div className="relative flex flex-col items-center justify-center h-screen bg-gradient-to-r from-blue-600 to-cyan-500 text-white text-center px-4 mb-10">
-      <h1 className="text-4xl md:text-5xl font-extrabold mb-6">Ziaual Hassain Shaik | Systems Engineer</h1>
+      <h1 className="text-4xl md:text-5xl font-extrabold mb-10">Ziaual Hassain Shaik | Systems Engineer</h1>
       <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
         I'm Zia, a System Engineer at TCS with over 15 months of experience, specializing in ETL processes and leveraging
         <span className="font-semibold text-yellow-300"> Azure</span> and 
@@ -43,14 +43,14 @@ export default function HeroCard() {
 
       <div className="mt-10">
         <a href='https://github.com/user-attachments/files/17692728/Ziaual_Hassain_Shaik.pdf' target='_blank'>
-          <button className="bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
+          <button className="mb-20 bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
             Resume
           </button>
         </a> 
       </div>
 
       {/* Marquee */}
-      <div className="overflow-hidden absolute bottom-20 left-0 right-0 w-full mt-10 mb-3">
+      <div className="overflow-hidden absolute bottom-20 left-0 right-0 w-full mb-16">
         <div className="flex animate-marquee space-x-8 text-2xl md:text-3xl">
           {[
             { Icon: FaJs, label: 'JavaScript', color: 'text-yellow-300' },
