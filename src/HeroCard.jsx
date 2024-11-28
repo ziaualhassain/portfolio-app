@@ -62,7 +62,7 @@ export default function HeroCard() {
             {[
               { Icon: FaJs, label: 'JavaScript', color: 'text-yellow-300' },
               { Icon: FaReact, label: 'React', color: 'text-blue-400' },
-              { Icon: SiNextdotjs, label: 'Next.js', color: 'text-black' },
+              // { Icon: SiNextdotjs, label: 'Next.js', color: 'text-black' },
               { Icon: FaNodeJs, label: 'Node.js', color: 'text-green-500' },
               { Icon: SiExpress, label: 'Express', color: 'text-gray-700' },
               { Icon: FaJava, label: 'Java', color: 'text-red-500' },
@@ -80,11 +80,11 @@ export default function HeroCard() {
               </div>
             ))}
 
-            {/* Repeat for infinite scroll */}
+            {/* Duplicate Items for Seamless Scroll */}
             {[
               { Icon: FaJs, label: 'JavaScript', color: 'text-yellow-300' },
               { Icon: FaReact, label: 'React', color: 'text-blue-400' },
-              { Icon: SiNextdotjs, label: 'Next.js', color: 'text-black' },
+              // { Icon: SiNextdotjs, label: 'Next.js', color: 'text-black' },
               { Icon: FaNodeJs, label: 'Node.js', color: 'text-green-500' },
               { Icon: SiExpress, label: 'Express', color: 'text-gray-700' },
               { Icon: FaJava, label: 'Java', color: 'text-red-500' },
@@ -96,7 +96,7 @@ export default function HeroCard() {
               { Icon: SiPrisma, label: 'Prisma', color: 'text-purple-600' },
               { Icon: SiMicrosoftazure, label: 'Azure', color: 'text-blue-600' },
             ].map(({ Icon, label, color }) => (
-              <div className="flex items-center space-x-2" key={label}>
+              <div className="flex items-center space-x-2" key={`${label}-duplicate`}>
                 <Icon className={color} />
                 <span className="font-semibold text-white">{label}</span>
               </div>
