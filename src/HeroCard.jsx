@@ -14,7 +14,7 @@ export default function HeroCard() {
         <div className="flex flex-col items-center justify-center mb-10">
           <h1 className="text-4xl md:text-5xl font-extrabold mb-6">Ziaual Hassain Shaik | Systems Engineer</h1>
           <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto mb-6">
-            I'm Zia, a Part-time traveller & full-time SE@TCS with over 15 months of experience, specializing in ETL processes and leveraging
+            I'm Zia, a Part-time traveller & full-time SE@TCS with over 2 Years of experience, specializing in ETL processes and leveraging
             <span className="font-semibold text-yellow-300"> Azure</span> and 
             <span className="font-semibold text-yellow-300"> MySQL</span> to design, optimize, and scale data solutions.
             With hands-on expertise across the
@@ -42,7 +42,7 @@ export default function HeroCard() {
 
         {/* Buttons */}
         <div className="mt-10 mb-10 flex flex-wrap justify-center gap-6">
-          <a href="https://github.com/user-attachments/files/17703959/Ziaual_Hassain_Shaik.pdf" target="_blank">
+          <a href="https://drive.google.com/file/d/1IxCdPidSJVG56Z68LQuByrqdoOMWTFqB/view?usp=sharing" target="_blank">
           <button className="flex items-center bg-yellow-500 text-white font-semibold py-3 px-6 rounded-lg shadow-lg hover:bg-yellow-600 hover:shadow-xl transition duration-300 ease-in-out">
               <FaCloudDownloadAlt className="mr-2" /> {/* Icon */}
               Resume

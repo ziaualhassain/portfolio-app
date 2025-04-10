@@ -5,6 +5,7 @@ import dhihLogo from "./assets/images/dhih.png"
 import portfolioLogo from "./assets/images/portfolio.png"
 import DSALogo from "./assets/images/DSA.png"
 import leadTracker from "./assets/images/leadTracker.png"
+import ServiceNowInc from "./assets/images/ServiceNowInc.png"
 import fundRiser from "./assets/images/fundriser.png"
 import ContactCard from "./ContactCard";
 
@@ -26,6 +27,19 @@ export default function Projects() {
                         githubhref="https://github.com/ziaualhassain"
                         target="_blank"
                         techStack="NextJS | Prisma | Postgres | Tailwind"
+                    />
+                </div>
+
+                {/* Project */}
+                <div>
+                    <ProjectCard
+                        title="Incident Predictor"
+                        desc="Inspired by ServiceNow Predictive Intelligence,It predict IT incident volumes (P1–P4) for specific assignment groups and dates.For proactive resource planning."
+                        image={ServiceNowInc}
+                        livehref="https://servicenow.zia.codes/"
+                        githubhref="https://github.com/ziaualhassain/"
+                        target="_blank"
+                        techStack="React | FastAPI | XGBoost | Tailwind"
                     />
                 </div>
 
