@@ -33,7 +33,7 @@ export default function Projects() {
                 {/* Project */}
                 <div>
                     <ProjectCard
-                        title="Incident Predictor"
+                        title="ServiceNow Inc Predictor"
                         desc="Inspired by ServiceNow Predictive Intelligence,It predict IT incident volumes (P1–P4) for specific assignment groups and dates.For proactive resource planning."
                         image={ServiceNowInc}
                         livehref="https://servicenow.zia.codes/"
